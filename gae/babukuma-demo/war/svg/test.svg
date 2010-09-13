@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300"
+	color="black">
+	<path id="babu_path_1"
+		d="M 0 0 L 0 0"
+		fill="none" stroke="red" stroke-width="3" />
+
+</svg>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+function test() {
+	var svgobj = document.getElementById('testsvg');
+	var svg = svgobj.contentDocument;
+
+	var babu_path_1 = svg.getElementById('babu_path_1');
+	alert(babu_path_1.getAttribute('d'));
+
+	var t1 = function() {
+		var x = Math.floor( Math.random() * 300 );
+		var y = Math.floor( Math.random() * 300 );
+		var d = babu_path_1.getAttribute('d');
+		babu_path_1.setAttribute('d', d + ' ' + x + ' ' + y);
+		setTimeout(t1, 1000);
+	};
+
+	setTimeout(t1, 1000);
+}
+</script>
+</head>
+<body onload="test();">
+<object id="testsvg" type="image/svg+xml" data="test.svg" width="300"
+	height="300"></object>
+</body>
+</html>

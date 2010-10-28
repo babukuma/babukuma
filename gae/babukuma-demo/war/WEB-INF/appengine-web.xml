@@ -3,9 +3,16 @@
 	<application>babukuma-demo</application>
 	<version>2</version>
 	
+	<static-files>
+		<include path="**.html" />
+		<include path="**.js" />
+		<include path="**.png" />
+		<include path="/html5/**.*" />
+	</static-files>
+	
 	<!-- Configure java.util.logging -->
 	<system-properties>
 		<property name="java.util.logging.config.file" value="WEB-INF/logging.properties"/>
 	</system-properties>
-	
+
 </appengine-web-app>
